@@ -1,0 +1,27 @@
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+  <div class="container">
+
+    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </a>
+
+    <!-- Be sure to leave the brand out there if you want it shown -->
+    <a class="brand" href="#">One Month Rails</a>
+
+    <!-- Place everything within .navbar-collapse to hide it until above 768px -->
+    <div class="nav-collapse collapse navbar-responsive-collapse">
+    <ul class="nav">
+    	<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "About Us", root_path %></li>
+    </ul>
+    <ul class="nav pull-right">
+    	<li><%= link_to "Login", '#' %></li>
+	</ul>
+</div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</div><!-- /.navbar -->
