@@ -34,4 +34,7 @@ Omrails::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # In Production, :host should be set to the actual host of yoru application.
+  config.action_mailer.default_url_options = { :host => 'localhost:3000'}
 end
