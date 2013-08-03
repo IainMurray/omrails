@@ -9,7 +9,7 @@
 		  
 		  <%= @pin.user.name %>
 		</p>
-		<% if current_user == pin.user %>
+		<% if current_user == @pin.user %>
 		<% end %>
 		<%= link_to 'Edit', edit_pin_path(@pin) %> |
 <%= link_to 'Back', pins_path %>
