@@ -79,6 +79,9 @@ class PinsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to pins_url }
       format.json { head :no_content }
+  def pin_params
+    params.require(:pin).permit(:description, :image)
+  end
     end
   end
 end
