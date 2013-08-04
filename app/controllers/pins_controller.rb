@@ -80,7 +80,7 @@ class PinsController < ApplicationController
       format.html { redirect_to pins_url }
       format.json { head :no_content }
   def pin_params
-    params.require(:pin).permit(:description, :image)
+    params.require(:pin).permit(:description, :image, :image_file_name)
   end
     end
   end
